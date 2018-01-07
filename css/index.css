@@ -1,0 +1,177 @@
+body {
+  font-family: Kreon, "Lucida Console", Monaco, Helvetica;
+  font-size: 20px;
+  margin: 2% auto;
+/*   margin-right: auto;
+  margin-left: auto; */
+  width: 80%;
+  max-width: 900px
+}
+
+h1 {
+  font-style: ;
+  color: #333;
+  text-shadow: 3px 3px white, 3px 3px 10px #a6a6a6;
+    
+}
+
+container {
+  margin: 0;
+}
+
+h2 {
+  font-family: Dosis;
+  font-size: 2em;
+  border-bottom: 25px solid #ffd480;  
+}
+
+li a:hover {
+  opacity: .8;
+}
+
+ul {
+  list-style:square;
+}
+
+.heading {
+  font-size: 4em; 
+  background-color: #ffcccc; 
+  padding: 50px; 
+  margin: 0px
+}
+
+.nav {
+  margin: 0 15px;
+  list-style: none;
+}
+
+.project {
+  border: 10px solid #ffb3b3;
+  padding: 5px;
+  margin: 4px 4px;
+  float: left;
+  width: 44%;
+  height: 200px;
+}
+
+.project:hover {
+  background-color: lightgray;
+}
+
+div.project {
+  padding: 1%;
+}
+
+img.project {
+  margin: 10px;
+  background-color: #ffb3b3;
+  border-radius: 5%;
+  border: none;
+}
+
+.black {
+  text-decoration: none;
+  color: black;
+}
+
+a:link {
+    color: #990000; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cca300;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cca300;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff471a;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.social-icons .social-icon {
+  margin: 0px;
+  float: left;
+}
+
+.nav-buttons {
+  border: 5px solid ;
+  padding: 15px;
+  color: #333;
+}
+
+.nav-button {
+  display: inline;
+}
+
+.fa {
+    padding: 8px;
+    width: 18px;
+    text-align: center;
+    border: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    opacity: .8;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #4d4d4d;
+  color: white;
+}
+
+.fa-free-code-camp {
+  background: #2eb82e;
+  color: white;
+  padding-right: 13px;
+  padding-left: 5px;
+}
+
+.fa-lastfm {
+  background: #ff1a1a;
+  color: white;
+  padding-right: 10px;
+  padding-left: 8px
+}
+
+@media (max-width:800px) {
+  .heading {
+    font-size: 10vw;
+  }
+  .project {
+    width:96%;
+    
+  }
+}
+
+/* Change the padding of the project containers with different screen sizes */
+@media (max-width: 1100px) {
+  div.project {
+    padding-bottom: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  div.project {
+    padding-bottom: 20%;
+  }
+}
+
