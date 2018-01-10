@@ -1,0 +1,128 @@
+html {
+	background-color: black;
+	height: 100%;
+}
+
+body {
+	font-family: "Concert One";	
+	background-color: white;
+}
+
+h1 {
+	font-family: "Baloo Tammudu";
+	font-size: 3.5em;
+	text-shadow: 4px 4px black;
+}
+
+h3 {
+	font-style: italic;
+}
+
+h4 {
+	font-family: Helvetica;
+}
+
+/* Classes ordered alphabetically */
+.btn {
+	font-family: Concert One;
+	font-size:;
+	padding-top: 8px;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.color-square {
+	border: 10px solid black;
+	border-radius: 25%;
+	height: 225px;
+	cursor: pointer;
+	color: white;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+
+.container {
+	max-width: 700px;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+.headers {
+	color: white;
+	text-align: center;
+	background-color: royalblue; 
+	padding: 2% 0%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+
+.settings-container {
+	padding-top: 8px;
+}
+
+.square-container {
+	padding-top: 20px;
+	background-color: black;
+}
+
+/* ID's ordered alphabetically */
+#message {
+	color: maroon;
+	font-style: italic;
+	font-size: 1.5rem;
+}
+
+#message-div {
+	text-align:center;
+	margin-left: -10px;
+}
+
+#rgbValues {
+	text-shadow: 3px 3px black;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-style: normal;
+}
+
+#sq2 {
+	text-align: center;
+}
+
+#win-text {
+	color: white;
+	font-size: 4em;
+	text-shadow: 2px 2px black;
+}
+
+/* change the color square size and inner text to make it responsive */
+@media (max-width: 770px) {
+	.color-square {
+		height: 170px;
+	}
+
+	#win-text {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.color-square {
+		height: 140px;
+	}
+
+	#win-text {
+		font-size: 1.75rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.color-square {
+		height: 100px;
+	}
+}

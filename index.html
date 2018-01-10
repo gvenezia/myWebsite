@@ -29,6 +29,7 @@
       <li title="Last-FM"><a href="https://www.last.fm/user/grrtano" target="_blank" class="social-icon"> <i class="fa fa-lastfm"></i></a></li>
     </ul>
     <p style="clear:both"></p> <!-- Clear the styles -->
+
     <!-- Navigation links -->
     <div class="nav-buttons">
       <span> • </span>
@@ -42,37 +43,51 @@
       <span> • </span>
     </div>
     <br>
+
     <!-- About me block -->
     <block id="about"> 
       <h2>About Me</h2>
-      <img style="float: right; border-radius: 50%; padding: 15px; max-width: 100%; width: 30%" src="https://pbs.twimg.com/profile_images/902674083531317248/Fek5mkIW.jpg">
+      <img class="profile-pic" src="https://pbs.twimg.com/profile_images/902674083531317248/Fek5mkIW.jpg">
       <p style="font-style:italic">I'm a self-taught coder living in Chicago. I just finished my MA in philosophy and am now transitioning to work in IT (mostly web dev). You can see some of my projects below. Feel free to contact me if you have any questions!</p>
       <h3>Languages and Technologies I Use</h3>
       <ul>
-        <li class="list">html5</li>
+        <li>html5</li>
         <li>css</li>
         <li>javascript</li>
         <li>Bootstrap</li>
         <li>C</li>
         <li>jQuery</li>
         <li>git</li>
-        </block>
       </ul>
+    </block>  
       <p style="clear:both"></p>
       <br>
+
+      <!-- Projects Block -->
       <block id="git"> 
         <h2>Here are my projects!</h2>
+        <!-- Home-ing Network -->
         <a href="https://github.com/2karis/CPForum" title="Click to see the project on Github" target="_blank" alt="home icon">
           <div class="project">
-          <img class="project" style="max-width: 150px; height: auto" src="https://image.flaticon.com/icons/png/512/25/25694.png">
-          <p class="black"><strong>Home-ing Network</strong></p>
-          <p class="black"><i>Designed to crowdsource information on the location of homeless people around ATL.</i></p>
-        </div></a>
+            <img class="project" src="https://image.flaticon.com/icons/png/512/25/25694.png">
+            <p class="black"><strong>Home-ing Network</strong></p>
+            <p class="black"><i>Designed to crowdsource information on the location of homeless people around ATL.</i></p>
+          </div>
+        </a>
+        <!-- Photo Gallery -->
         <a href="gallery.html" title="Click to open this webpage in a new tab" target="_blank" alt="A screenshot of my photo gallery webpage"> 
           <div class="project">
-            <img class="project" style="max-width: 150px; height: auto"  src="images/gallery.png">
+            <img class="project" src="images/gallery.png">
             <p class="black"><strong>Photo Gallery Webpage</strong></p>
-               <p class="black"><i>Simple website for displaying photographs that I've taken and images I've edited.</i></p>
+            <p class="black"><i>Simple website for displaying photographs that I've taken and images I've edited.</i></p>
+          </div>
+        </a> 
+        <!-- RGB Game -->
+        <a href="rgbGame.html" title="Click to open this webpage in a new tab" target="_blank" alt="A screenshot of my RGB Color Guessing Game"> 
+          <div class="project">
+            <img class="project" src="images/rgbGame.png">
+            <p class="black"><strong>RGB Color Guessing Game</strong></p>
+            <p class="black"><i>A simple javascript-run game where you guess which square has the correct rgb value.</i></p>
           </div>
         </a> 
       </block> 
@@ -83,15 +98,14 @@
         <h2>Here's my LinkedIn</h2>
       </block>
 -->
+      <!-- Contact Info block -->
       <block id="contact"> 
         <h2>Contact Info</h2>
         <h3>Email: <a href="mailto:g.venezia@outlook.com>g.venezia@outlook.com">g.venezia@outlook.com</a></h3>
       </block>
-        </div>
-      </div>
-      </div>
 
-      <script type="text/javascript" src="index.js"></script>
-</body>
+      <!-- Personal JS -->
+      <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
 
 </html>

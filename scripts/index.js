@@ -1,3 +1,5 @@
+// alert("Connected");
+
 // window.addEventListener("load", function() {
 //   var about = document.querySelector("#about");
 //   var git = document.querySelector("#git");
