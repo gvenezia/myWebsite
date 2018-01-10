@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/gvenezia/pen/POprdX.
+My portfolio website with links to various projects hosted on the same domain.
 
  
