@@ -111,14 +111,14 @@ window.addEventListener("load", function() {
 }, {once: true}); // End "load" event listener
 
 
-// Does it need a closure? (e.g. a function wrapping the .addEventListener? )
-/* for (var k = 0; k < numberSquares; k++) {
-	colorSquare[k].addEventListener("click", function() {
-		alert("square" + k + "clicked"); 
-		message.innerText = "Nope!";
-		temp[k] = k;
-		colorSquare[temp[k]].style.backgroundColor = "white";	// 
-	});
-} // End for loop
+// // functional closure that deals with each iteration of 'k' instead of only returning the last k++
+// 		 for (var k = 0; k < numberSquares; k++) {
+// 			colorSquare[k].addEventListener("change", function(l) {
+// 				return function() {
+// 					alert("square" + l + "clicked"); 
+// 					message.innerText = "Nope!";
+// 					colorSquare[l].style.backgroundColor = "black";	
+// 				}()
+// 			}(k));
+// 		} // End for loop
 
-*/
