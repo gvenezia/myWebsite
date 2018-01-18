@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pClone</title>
+
+	<!-- Paper.js -->
+	<script type="text/javascript" src="assets/js/lib/paper-full.min.js"></script>
+
+	<!-- local CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/pClone.css">
+
+	<!-- Howler.js -->
+	<script src="assets/js/lib/howler.core.js"></script>
+
+	<!-- Object with all the key names and sub-objects to set the color and sound sample for that corresponding key -->
+	<script type="text/javascript" src="assets/js/data.js"></script>
+
+	<!-- inline PaperScript for the canvas in the html body -->
+	<script type="text/paperscript" canvas="myCanvas">
+
+	// Circles array for storying and animating circles
+	var circles = [];
+
+	// Generates a number of dots (i < #ofDots)
+	function onKeyDown(event) {
+
+		// Play the corresponding sound
+		keyData[event.key].sound.play();
+
+		// Generate the circles that go along with the sound and keypress
+		for (var i = 0; i < 1; i++){
+			// Variables for generating a random point, responsive to screen size 
+			var dimensions = new Point(view.size.width,view.size.height);
+			var randomPoint = Point.random();
+			var point = dimensions * randomPoint;
+
+			// Create the new circle and add a random fill color
+			var newCircle = new Path.Circle(point, 200);
+			newCircle.fillColor = keyData[event.key].color;
+
+			// Push the new circle onto the circles array
+			circles.push(newCircle);
+		}
+	}
+
+	function onFrame(event) {
+		for(var i = 0; i < circles.length; i++){
+			circles[i].fillColor.hue += 2;
+			circles[i].scale(.9);
+
+			// If the circle is no longer visible
+			if (circles[i].area < 1){
+				// Remove 1 item at 'i' index position and decrement i by 1
+				circles[i].remove();
+				circles.splice(i, 1);
+				i--;
+			}
+		}
+	}	
+
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
