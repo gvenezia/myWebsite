@@ -19,18 +19,20 @@
 
   <body>
 
-    <!-- Block with my name -->
-    <h1 class="heading" title="Guy-'tah-no  Veh-'neh-tsee-uh">Gaetano <br>Venezia</h1>
+    <!-- Color block with my name -->
+    <h1 class="heading" id="top" title="Guy-'tah-no  Veh-'neh-tsee-uh">Gaetano <br>Venezia</h1>
+
+    <!-- Social media fa icons -->
     <ul class="nav social-icons">
       <li title="Github"><a href="https://github.com/gvenezia" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
-      <li title="LinkedIn"><a href="https://www.linkedin.com/in/gaetano-venezia-32bb29155/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+      <li title="LinkedIn"><a href="https://www.linkedin.com/in/gvenezia/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
       <li title="Free Code Camp"><a href="https://www.freecodecamp.org/gvenezia" target="_blank" class="social-icon"> <i class="fa fa-free-code-camp"></i></a></li>
       <li title="Code Pen"><a href="https://codepen.io/gvenezia/" target="_blank" class="social-icon"> <i class="fa fa-codepen"></i></a>
       <li title="Facebook"><a href="https://www.facebook.com/guyvenezia" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
       <li title="Last-FM"><a href="https://www.last.fm/user/grrtano" target="_blank" class="social-icon"> <i class="fa fa-lastfm"></i></a></li>
-
     </ul>
-    <p style="clear:both"></p> <!-- Clear the styles -->
+    <!-- Clear the styles -->
+    <p style="clear:both"></p> 
 
     <!-- Navigation links -->
     <div class="nav-buttons">
@@ -39,8 +41,6 @@
       <span> • </span>
       <p class="nav-button git-link"><a href="#git">My Projects</a></p>
       <span> • </span>
-<!--       <p class="nav-button"><a href="#linkedin">LinkedIn</a></p>
-      <span> • </span> -->
       <p class="nav-button contact-link"><a href="#contact">Contact</a></p>
       <span> • </span>
     </div>
@@ -49,18 +49,22 @@
     <!-- About me block -->
     <block id="about"> 
       <h2>About Me</h2>
+
       <img class="profile-pic" src="https://pbs.twimg.com/profile_images/902674083531317248/Fek5mkIW.jpg">
+
       <p style="font-style:italic">I'm a self-taught coder living in Chicago. I just finished my MA in philosophy and am now transitioning to work in IT (mostly web dev). You can see some of my projects below. Feel free to contact me if you have any questions!</p>
+
       <h3>Languages and Technologies I Use</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
         <li>jQuery</li>
+        <li>MEAN stack</li>
         <li>Bootstrap</li>
-        <li>Font Awesome</li>
         <li>C</li>
         <li>Github</li>
+        <li>and more... like paper.js, howler.js, font awesome, and mongoose </li>
       </ul>
     </block>  
       <p style="clear:both"></p>
@@ -112,19 +116,28 @@
       </block> 
       <p style="clear:both"></p>
       <br>
-<!--        
-      <block id="linkedin"> 
-        <h2>Here's my LinkedIn</h2>
-      </block>
--->
+
       <!-- Contact Info block -->
       <block id="contact"> 
         <h2>Contact Info</h2>
-        <h3>Email: <a href="mailto:g.venezia@outlook.com>g.venezia@outlook.com">g.venezia@outlook.com</a></h3>
+        <h3>
+          <a href="mailto:g.venezia@outlook.com>g.venezia@outlook.com">Email:</a> &nbsp &nbsp g.venezia@outlook.com
+        </h3>
+        
+        <a href="https://www.linkedin.com/in/gvenezia/" target:"_blank">
+          <h3>LinkedIn</h3>
+        </a>
       </block>
+
+      <footer>
+        <a id="footer-link" href="#top">
+          <i class="fa fa-arrow-up" aria-hidden="true"></i> &nbsp Back to the top <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </footer>
 
       <!-- Personal JS -->
       <script type="text/javascript" src="scripts/index.js"></script>
   </body>
 
 </html>
+

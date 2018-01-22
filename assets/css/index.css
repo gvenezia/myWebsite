@@ -2,10 +2,9 @@ body {
   font-family: Kreon, "Lucida Console", Monaco, Helvetica;
   font-size: 20px;
   margin: 2% auto;
-/*   margin-right: auto;
-  margin-left: auto; */
   width: 80%;
-  max-width: 900px
+  max-width: 900px;
+  margin-bottom: 0px;
 }
 
 h1 {
@@ -50,6 +49,16 @@ a:active {
     color: #ff471a;
     background-color: transparent;
     text-decoration: underline;
+}
+
+footer {
+  font-family: Dosis;
+  font-size: 2rem;
+  background-color: #7997A2;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 40px;
 }
 
 .black {
@@ -172,6 +181,15 @@ div.project img {
   padding-right: 10px;
   padding-left: 8px;
 }
+
+
+
+/* ID 's*/
+#footer-link {
+  color: white;
+}
+
+
 
 /* @media's */
 @media (max-width:800px) {
