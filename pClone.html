@@ -18,25 +18,45 @@
 	<!-- inline PaperScript for the canvas in the html body -->
 	<script type="text/paperscript" canvas="myCanvas">
 
+	// Instructions 
+	var text = new PointText({
+	    point: [0, 0],
+	    content: 'To generate sound and animation, press a key, a-z. \nBe sure to turn up your speakers!\n\n(Note: contains flashing lights)',
+	    fillColor: 'grey',
+	    fontFamily: 'Helvetica',
+	    fontWeight: 'bold',
+	    fontSize: 25
+	});
+
+	text.position = new Point(view.size.width / 2, view.size.height / 2);
+
+	
+
 	// Circles array for storying and animating circles
 	var circles = [];
 
 	// Generates a number of dots (i < #ofDots)
 	function onKeyDown(event) {
+		// Hide the instructions
+		text.visible = false;
+
+		// assign the current key to a shorter variable for readability
+		var key = keyData[event.key];
 
 		// Play the corresponding sound
-		keyData[event.key].sound.play();
+		key.sound.play();
 
 		// Generate the circles that go along with the sound and keypress
-		for (var i = 0; i < 1; i++){
+		for (var i = 0; i < key.num; i++){
 			// Variables for generating a random point, responsive to screen size 
 			var dimensions = new Point(view.size.width,view.size.height);
 			var randomPoint = Point.random();
 			var point = dimensions * randomPoint;
 
 			// Create the new circle and add a random fill color
-			var newCircle = new Path.Circle(point, 200);
+			var newCircle = new Path.Circle(point, key.size);
 			newCircle.fillColor = keyData[event.key].color;
+			newCircle.key = key;
 
 			// Push the new circle onto the circles array
 			circles.push(newCircle);
@@ -44,9 +64,16 @@
 	}
 
 	function onFrame(event) {
+		// var destination = Point.random() * view.size;
+
 		for(var i = 0; i < circles.length; i++){
-			circles[i].fillColor.hue += 2;
-			circles[i].scale(.9);
+			// if (circles[i].key.scatter == true){
+			// 	console.log("scatter condition true");
+			// 	scatter(circles[i], destination);
+			// }
+
+			circles[i].fillColor.hue += circles[i].key.pulse;
+			circles[i].scale(circles[i].key.speed);
 
 			// If the circle is no longer visible
 			if (circles[i].area < 1){
