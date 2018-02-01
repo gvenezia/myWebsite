@@ -58,16 +58,18 @@ window.addEventListener("load", function() {
 						rand256() + ")" ;
 	}
 
+	// Clear the Nope message from the nav bar
 	function clearNopes() {
 		message.innerText = "";
 	}
 
+	// Randomize the color squares for a new game
 	function randomizeColorSquares() {
-		// Clear win text and nopes
+		// Clear any "win" or "nope" text
 		winText.innerText = "";
 		clearNopes();
 
-		// Assign new random colors and clear nopes
+		// Assign new random colors
 		for (var i = 0; i < numberSquares; i++){
 			colorSquare[i].style.backgroundColor = randRGB();
 		}
@@ -109,16 +111,3 @@ window.addEventListener("load", function() {
 	} // End randomizeColorSquares()
 
 }, {once: true}); // End "load" event listener
-
-
-// // functional closure that deals with each iteration of 'k' instead of only returning the last k++
-// 		 for (var k = 0; k < numberSquares; k++) {
-// 			colorSquare[k].addEventListener("change", function(l) {
-// 				return function() {
-// 					alert("square" + l + "clicked"); 
-// 					message.innerText = "Nope!";
-// 					colorSquare[l].style.backgroundColor = "black";	
-// 				}()
-// 			}(k));
-// 		} // End for loop
-
