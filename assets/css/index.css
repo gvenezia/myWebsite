@@ -6,6 +6,7 @@ body {
   width: 80%;
   max-width: 900px;
   margin-bottom: 0px;
+  color: #333;
 }
 
 h1 {
@@ -22,34 +23,37 @@ h2 {
 
 li a:hover {
   opacity: .8;
+  border: none;
 }
 
-ul {
-  list-style: square;
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  background-color: transparent; 
+  text-decoration: none;
 }
 
 a:link {
     color: #990000; 
-    background-color: transparent; 
-    text-decoration: none;
 }
 
 a:visited {
     color: #cca300;
-    background-color: transparent;
-    text-decoration: none;
 }
 
 a:hover {
     color: #cca300;
-    background-color: transparent;
-    text-decoration: underline;
+    /*border-bottom: 5px solid black;*/
 }
 
 a:active {
     color: #ff471a;
-    background-color: transparent;
-    text-decoration: underline;
+}
+
+ul {
+  list-style: square;
 }
 
 footer {
@@ -65,7 +69,7 @@ footer {
 /* Classes in alphabetical order */
 .black {
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 
 .heading {
@@ -90,6 +94,27 @@ footer {
   color: #333;
 }
 
+.nav-buttons a {
+  display: inline-block;
+  font-family: Dosis;
+  font-weight: 700;
+  text-decoration: none;
+}
+  
+.nav-buttons a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #cca300;
+  transition: width .3s;
+}
+
+.nav-buttons a:hover::after {
+  width: 100%;
+    /*//transition: width .3s;*/
+}
+
 .profile-pic {
   float: right;
   border-radius: 50%;
@@ -103,8 +128,9 @@ footer {
   padding: 5px;
   margin: 4px 4px;
   float: left;
-  width: 44%;
-  height: 200px;
+  width: 49%;
+  height: 260px;
+  box-sizing: border-box;
 }
 
 div.project {
@@ -118,7 +144,7 @@ div.project:hover {
 div.project img {
   max-width: 150px;
   height: auto;
-  margin: 10px;
+  margin: 7px 7px 0px 7px;
   background-color: #ffb3b3;
   border-radius: 5%;
   border: none;
@@ -177,7 +203,7 @@ div.project img {
   padding-left: 5px;
 }
 
-.fa-github {
+li .fa-github {
   background: #4d4d4d;
   color: white;
   padding-right: 9px;
@@ -198,10 +224,31 @@ div.project img {
   padding-left: 9px;
 }
 
-
 /* ID 's*/
 #footer-link {
   color: white;
+}
+
+#github-more-div {
+  text-align: center;
+}
+
+#github-projects-icon {
+  color: #333;
+  font-size: 7rem;
+  margin: auto auto;
+  display: inline-block;
+  text-align: center;
+  /*transform: translateX(-25%); */
+}
+
+#github-plus-icon {
+  color: #333;
+  font-size: 2.5rem;
+  margin: auto auto;
+  display: inline-block;
+  text-align: center;
+  transform: translateY(-40%);
 }
 
 
