@@ -66,6 +66,12 @@ footer {
   padding: 40px;
 }
 
+footer:hover > .fa-arrow-up {
+  opacity: 0;
+  transform: translateY(-300%);
+  transition: 2s ease-out, opacity .75s;
+}
+
 /* Classes in alphabetical order */
 .black {
   text-decoration: none;
@@ -92,28 +98,31 @@ footer {
   border: 5px solid ;
   padding: 15px;
   color: #333;
-}
-
-.nav-buttons a {
-  display: inline-block;
-  font-family: Dosis;
-  font-weight: 700;
+  margin: auto auto;
+  font-family: Kreon;
+  font-size: 1.25em;
+  font-weight: 400;
   text-decoration: none;
 }
-  
-.nav-buttons a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: #cca300;
-  transition: width .3s;
-}
 
-.nav-buttons a:hover::after {
-  width: 100%;
-    /*//transition: width .3s;*/
-}
+/* Underline animation for the nav links*/
+  .nav-buttons a {
+    display: inline-block;
+  }
+
+  .nav-buttons a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #cca300;
+    transition: width .3s;
+  }
+
+  .nav-buttons a:hover::after {
+    width: 100%;
+      /*//transition: width .3s;*/
+  }
 
 .profile-pic {
   float: right;
@@ -282,6 +291,10 @@ li .fa-github {
 @media (max-width: 575px) {
   div.project {
     padding-bottom: 25%;
+  }
+
+  footer {
+    font-size: 1.5rem;
   }
 
   .heading {
