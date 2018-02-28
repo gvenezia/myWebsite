@@ -39,13 +39,9 @@ a:link {
     color: #990000; 
 }
 
-a:visited {
-    color: #cca300;
-}
-
+a:visited,
 a:hover {
     color: #cca300;
-    /*border-bottom: 5px solid black;*/
 }
 
 a:active {
@@ -132,13 +128,14 @@ footer:hover > .fa-arrow-up {
   width: 30%;
 }
 
+/*nth child in order to get rid of redundant margin on all project containers */
 .project {
   border: 10px solid #ffb3b3;
   padding: 5px;
-  margin: 4px 4px;
+  margin: 3px 3px;
   float: left;
   width: 49%;
-  height: 260px;
+  height: 270px;
   box-sizing: border-box;
 }
 
@@ -240,6 +237,7 @@ li .fa-github {
 
 #github-more-div {
   text-align: center;
+  margin-top: 10px;
 }
 
 #github-projects-icon {
@@ -268,7 +266,7 @@ li .fa-github {
 /* Large Devices – Desktop view */
 @media (max-width: 991px) {
   div.project {
-    padding-bottom: 10%;
+    padding-bottom: 25%;
   }
 
   .heading {
