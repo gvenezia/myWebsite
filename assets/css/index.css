@@ -277,7 +277,14 @@ li .fa-github {
 /* Medium Devices — Tablet view */
 @media (max-width: 767px) {
   .project {
-    width:96%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  div.project img {
+    max-width: 180px;
+    height: auto;
   }
 
   h1 span {
@@ -288,7 +295,13 @@ li .fa-github {
 /* Small Devices – Mobile View */
 @media (max-width: 575px) {
   div.project {
+    height: 290px;
     padding-bottom: 25%;
+  }
+
+  div.project img {
+    max-width: 140px;
+    height: auto;
   }
 
   footer {
