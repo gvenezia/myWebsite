@@ -96,7 +96,7 @@ footer:hover > .fa-arrow-up {
   color: #333;
   margin: auto auto;
   font-family: Kreon;
-  font-size: 1.25em;
+  font-size: 1.45rem;
   font-weight: 400;
   text-decoration: none;
 }
@@ -266,7 +266,11 @@ li .fa-github {
 /* Large Devices – Desktop view */
 @media (max-width: 991px) {
   div.project {
-    padding-bottom: 25%;
+    height: 300px;
+  }
+
+  .nav-buttons {
+    font-size: 1.35rem;
   }
 
   .heading {
@@ -294,9 +298,26 @@ li .fa-github {
 
 /* Small Devices – Mobile View */
 @media (max-width: 575px) {
+  body {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    padding: 0px 12%;
+    margin: auto auto;
+    text-align: center;
+  }
+
+  .social-icon {
+    font-size: 20px;
+  }
+
+  .nav-buttons {
+    font-size: 1.05rem;
+  }
+
   div.project {
-    height: 290px;
-    padding-bottom: 25%;
+    height: 280px;
   }
 
   div.project img {
