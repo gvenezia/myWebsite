@@ -2,18 +2,25 @@
 body {
   font-family: Kreon, "Lucida Console", Monaco, Helvetica;
   font-size: 20px;
-  margin: 2% auto;
+  margin: 2% auto 0px auto;
   width: 80%;
   max-width: 900px;
-  margin-bottom: 0px;
   color: #333;
 }
 
 h1 {
-  color: #333;
-  text-shadow: 3px 3px white, 3px 3px 10px #a6a6a6;
-  transition: .1s linear;
+  text-shadow: 3px 3px white, 3px 3px 15px #a6a6a6;
+  transition: .2s ease-out;
+  font-size: 4em; 
+  background-color: #ffcccc; 
+  padding: 50px; 
+  margin: 0px;
 }
+
+h1:hover span {
+    opacity: 1;
+    transition: .2s linear;
+  }
 
 h2 {
   font-family: Dosis;
@@ -23,9 +30,9 @@ h2 {
 
 li a:hover {
   opacity: .8;
-  border: none;
 }
 
+/* Standard link behavior */
 a,
 a:link,
 a:visited,
@@ -48,6 +55,25 @@ a:active {
     color: #ff471a;
 }
 
+/* Text in the projects (since it is all a link) */
+a p, h4 {
+  text-decoration: none;
+  color: #333;
+}
+
+a h4 {
+  line-height: .9;
+}
+
+a p {
+  font-style: italic;
+  /*line-height: 1.3*/
+}
+
+a footer {
+  color: white;
+}
+
 ul {
   list-style: square;
 }
@@ -58,8 +84,8 @@ footer {
   background-color: #7997A2;
   margin-top: 100px;
   margin-bottom: 0px;
+  padding: 40px 10px;
   text-align: center;
-  padding: 40px;
 }
 
 footer:hover > .fa-arrow-up {
@@ -69,18 +95,6 @@ footer:hover > .fa-arrow-up {
 }
 
 /* Classes in alphabetical order */
-.black {
-  text-decoration: none;
-  color: #333;
-}
-
-.heading {
-  font-size: 4em; 
-  background-color: #ffcccc; 
-  padding: 50px; 
-  margin: 0px
-}
-
 .nav {
   margin: 0 15px;
   list-style: none;
@@ -91,9 +105,8 @@ footer:hover > .fa-arrow-up {
 }
 
 .nav-buttons {
-  border: 5px solid ;
+  border: 5px solid #333;
   padding: 15px;
-  color: #333;
   margin: auto auto;
   font-family: Kreon;
   font-size: 1.45rem;
@@ -131,23 +144,28 @@ footer:hover > .fa-arrow-up {
 /*nth child in order to get rid of redundant margin on all project containers */
 .project {
   border: 10px solid #ffb3b3;
-  padding: 5px;
-  margin: 3px 3px;
+  padding: 7px;
+  margin: 4px 1% 4px 0px;
   float: left;
   width: 49%;
   height: 270px;
   box-sizing: border-box;
 }
 
-div.project {
-  padding: 1%;
-}
+/* why won't this select the project? */
+/*div.project:nth-of-type(even){ 
+  margin-right: 0px;
+}*/
 
 div.project:hover {
   background-color: #efefef;
 }
 
-div.project img {
+
+.project-img {
+  padding: 1%;
+  float: right;
+  box-sizing: border-box;
   max-width: 150px;
   height: auto;
   margin: 7px 7px 0px 7px;
@@ -186,53 +204,48 @@ div.project img {
     margin: 5px 2px;
     border-radius: 50%;
     opacity: .8;
+    color: white;
 }
 
 .fa-codepen {
   background: #4d4d4d;
-  color: white;
   padding-right: 10px;
   padding-left: 8px;
 }
 
 .fa-facebook {
     background: #3B5998;
-    color: white;
     padding-right: 9px;
     padding-left: 9px;
 }
 
 .fa-free-code-camp {
   background: #2eb82e;
-  color: white;
   padding-right: 13px;
   padding-left: 5px;
 }
 
 li .fa-github {
   background: #4d4d4d;
-  color: white;
   padding-right: 9px;
   padding-left: 9px;
 }
 
 .fa-lastfm {
   background: #ff1a1a;
-  color: white;
   padding-right: 10px;
   padding-left: 8px
 }
 
 .fa-linkedin {
   background: #007bb5;
-  color: white;
   padding-right: 9px;
   padding-left: 9px;
 }
 
-/* ID 's*/
-#footer-link {
-  color: white;
+/* ID 's, sorted alphabetically */
+#about p {
+  font-style: italic;
 }
 
 #github-more-div {
@@ -243,56 +256,51 @@ li .fa-github {
 #github-projects-icon {
   color: #333;
   font-size: 7rem;
-  margin: auto auto;
   display: inline-block;
-  text-align: center;
-  /*transform: translateX(-25%); */
 }
 
 #github-plus-icon {
   color: #333;
   font-size: 2.5rem;
-  margin: auto auto;
   display: inline-block;
-  text-align: center;
   transform: translateY(-40%);
 }
 
 
-/* Media Queries (I use Bootstrap's breakpoints), but the default size is Extra Large (>991px) */
-  /* change the sizing of the projects containers */
-  /* change the display for the .pronunciation span in the h1*/
+/* Media Queries (I use Bootstrap's breakpoints) */
+  /* the default size is Extra Large (>991px) */
 
 /* Large Devices – Desktop view */
 @media (max-width: 991px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
   div.project {
-    height: 300px;
+    height: 340px;
   }
 
   .nav-buttons {
     font-size: 1.35rem;
   }
-
-  .heading {
-    font-size: 4rem;
-  }
 }
 
 /* Medium Devices — Tablet view */
 @media (max-width: 767px) {
-  .project {
+  h1 span {
+    display: none;
+  }
+
+  div.project {
+    height: 290px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
   
-  div.project img {
+  .project-img {
     max-width: 180px;
     height: auto;
-  }
-
-  h1 span {
-    display: none;
   }
 }
 
@@ -300,14 +308,19 @@ li .fa-github {
 @media (max-width: 575px) {
   body {
     font-size: 18px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
   }
 
   .social-icons {
-    padding: 0px 12%;
+    padding: 1px 12%;
     margin: auto auto;
-    text-align: center;
   }
 
+  /* Keep the icons at 20px to retain the styling */
   .social-icon {
     font-size: 20px;
   }
@@ -316,11 +329,7 @@ li .fa-github {
     font-size: 1.05rem;
   }
 
-  div.project {
-    height: 280px;
-  }
-
-  div.project img {
+  .project-img {
     max-width: 140px;
     height: auto;
   }
@@ -328,21 +337,13 @@ li .fa-github {
   footer {
     font-size: 1.5rem;
   }
-
-  .heading {
-    font-size: 3.5rem;
-  }
 }
 
-/* For sizes bigger than medium/tablet */
+/* For sizes bigger than medium/tablet, enable the pronunciation to show on */
 @media (min-width: 768px) {
   h1:hover {
     padding-left: 45px;
     padding-right: 55px;
     transition: .1s linear;
-  }
-
-  h1:hover span {
-    opacity: 1;
   }
 }

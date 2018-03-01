@@ -37,9 +37,9 @@
   <body>
 
     <!-- Color block with my name and pronunciation on hover -->
-    <h1 class="heading" id="top">
-      Gaetano <span class="pronunciation" id="first-name">Guy-'TAH-no</span> 
-      <br>Venezia <span class="pronunciation" id="last-name">Veh-'NEH-tsee-uh</span>
+    <h1 id="heading">
+      Gaetano <span class="pronunciation">Guy-'TAH-no</span> 
+      <br>Venezia <span class="pronunciation">Veh-'NEH-tsee-uh</span>
     </h1>
 
     <!-- Social media fa icons -->
@@ -51,8 +51,7 @@
       <li title="Facebook"><a href="https://www.facebook.com/guyvenezia" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
       <li title="Last-FM"><a href="https://www.last.fm/user/grrtano" target="_blank" class="social-icon"> <i class="fa fa-lastfm"></i></a></li>
     </div>
-    <!-- Clear the styles -->
-    <p style="clear:both"></p> 
+    <p style="clear:both"></p> <!-- Clear the styles -->
 
     <!-- Navigation links -->
     <div class="nav-buttons">
@@ -70,7 +69,7 @@
 
       <img class="profile-pic" src="https://pbs.twimg.com/profile_images/902674083531317248/Fek5mkIW.jpg">
 
-      <p style="font-style:italic">I'm a self-taught coder living in Chicago. I just finished my MA in philosophy and am now transitioning to work in web development (especially front-end). You can see some of my projects below. Feel free to contact me if you have any questions!</p>
+      <p>I'm a self-taught coder living in Chicago. I just finished my MA in philosophy and am now transitioning to work in web development (especially front-end). You can see some of my projects below. Feel free to contact me if you have any questions!</p>
 
       <h3>Languages and Technologies I Use</h3>
       <ul>
@@ -91,87 +90,85 @@
       <!-- Projects Block -->
       <block id="projects"> 
         <h2>Here are some of my projects!</h2>
-<!-- Add a hackathon badge -->
-        <!-- Basic Circuitry for Kids! --> 
-        <a href="https://github.com/gvenezia/mockBlog" title="Click to see this project on github" target="_blank" alt="A screenshot of my mock blog"> 
+
+        <!-- Basic Circuitry for Kids! -->  <!-- Add a hackathon badge -->
+        <a href="https://github.com/gvenezia/mockBlog" title="Click to see this project on Github" target="_blank" alt="A screenshot of my mock blog"> 
           <div class="project">
-            <img class="project" src="images/circuitryKids.png">
-            <p class="black"><strong>Basic Circuitry for Kids!</strong></p>
-            <p class="black"><i>Small interactive lessons teach the basics of circuitry. The web interface interacts with an Arduino board to produce feedback through lights.</i></p>
+            <img class="project-img" src="images/circuitryKids.png">
+            <h4>Basic Circuitry for Kids!</h4>
+            <p>Small interactive lessons teach the basics of circuitry. The web interface interacts with an Arduino board to produce feedback through lights.</p>
           </div>
         </a>
 
-<!-- Add a hackathon badge -->
-        <!-- Home-ing Network -->
+        <!-- Home-ing Network --> <!-- Add a hackathon badge -->
         <a href="https://github.com/2karis/CPForum" title="Click to see the project on Github" target="_blank" alt="home icon">
           <div class="project">
-            <img class="project" src="https://image.flaticon.com/icons/png/512/25/25694.png">
-            <p class="black"><strong>Home-ing Network</strong></p>
-            <p class="black"><i>Designed to crowdsource information on the location of homeless people around Atlanta. </i></p>
+            <img class="project-img" src="https://image.flaticon.com/icons/png/512/25/25694.png">
+            <h4>Home-ing Network</h4>
+            <p>Designed to crowdsource information on the location of homeless people around Atlanta.</p>
           </div>
         </a>
 
         <!-- Mock Blog -->
-        <a href="https://github.com/gvenezia/mockBlog" title="Click to see this project on github" target="_blank" alt="A screenshot of my mock blog"> 
+        <a href="https://github.com/gvenezia/mockBlog" title="Click to see this project on Github" target="_blank" alt="A screenshot of my mock blog"> 
           <div class="project">
-            <img class="project" src="images/mockBlog1.png">
-            <p class="black"><strong>Mock Blog</strong></p>
-            <p class="black"><i>A working framework for a standard blog site (MEN stack). Styled with Semantic UI and masonry.js (for a cascading grid of images.)</i></p>
+            <img class="project-img" src="images/mockBlog1.png">
+            <h4>Mock Blog</h4>
+            <p><i>A working framework for a standard blog site (MEN stack). Styled with Semantic UI and masonry.js (for a cascading grid of images.)</i></p>
           </div>
         </a> 
 
         <!-- RGB Game -->
         <a href="rgbGame.html" title="Click to open this webpage in a new tab" target="_blank" alt="A screenshot of my RGB Color Guessing Game"> 
           <div class="project">
-            <img class="project" src="images/rgbGame.png">
-            <p class="black"><strong>RGB Color Guessing Game</strong></p>
-            <p class="black"><i>A simple javascript-run game where you guess which square has the correct rgb value.</i></p>
+            <img class="project-img" src="images/rgbGame.png">
+            <h4>RGB Color Guessing Game</h4>
+            <p><i>A simple javascript-run game where you guess which square has the correct rgb value.</i></p>
           </div>
         </a> 
 
         <!-- City Select -->
         <a href="https://github.com/gvenezia/citySelect" title="Click to see this project on github" target="_blank" alt="A screenshot of my mock blog"> 
           <div class="project">
-            <img class="project" src="images/citySelect.png">
-            <p class="black"><strong>City Select</strong></p>
-            <p class="black"><i>A city review site that helps users better plan their next vacation or move. Uses a MEN stack, RESTful routing, vanilla JS, and more.</i></p>
+            <img class="project-img" src="images/citySelect.png">
+            <h4>City Select</h4>
+            <p><i>A city review site that helps users better plan their next vacation or move. Uses a MEN stack, RESTful routing, vanilla JS, and more.</i></p>
           </div>
         </a>
-
 
         <!-- Patatap Clone -->
         <a href="pClone.html" title="Click to open this webpage in a new tab" target="_blank" alt="A screenshot of my Patatap Clone"> 
           <div class="project">
-            <img class="project" src="images/pClone.png">
-            <p class="black"><strong>Tapapat</strong></p>
-            <p class="black"><i>An interactive sound and animation kit inspired by Patatap. Utilizes paper.js and howler.js. (No mobile support yet)</i></p>
+            <img class="project-img" src="images/pClone.png">
+            <h4>Tapapat</h4>
+            <p><i>An interactive sound and animation kit inspired by Patatap. Utilizes paper.js and howler.js. (No mobile support yet)</i></p>
           </div>
         </a> 
 
         <!-- Twitch TV Viewer -->
         <a href="https://github.com/gvenezia/twitch-TV-viewer" title="Click to see this project on github" target="_blank" alt="A screenshot of my mock blog"> 
           <div class="project">
-            <img class="project" src="images/twitchVert.png">
-            <p class="black"><strong>Twitch TV Channel Viewer</strong></p>
-            <p class="black"><i>This webpage renders the current status of some of the most popular twitch.tv channels with the Twitch API, vanilla JS, and Bootstrap.</i></p>
+            <img class="project-img" src="images/twitchVert.png">
+            <h4>Twitch TV Channel Viewer</h4>
+            <p><i>This webpage renders the current status of some of the most popular twitch.tv channels with the Twitch API, vanilla JS, and Bootstrap.</i></p>
           </div>
         </a>
 
         <!-- Photo Gallery -->
         <a href="gallery.html" title="Click to open this webpage in a new tab" target="_blank" alt="A screenshot of my photo gallery webpage"> 
           <div class="project">
-            <img class="project" src="images/gallery.png">
-            <p class="black"><strong>Photo Gallery Webpage</strong></p>
-            <p class="black"><i>Simple website for displaying photographs that I've taken and images I've edited.</i></p>
+            <img class="project-img" src="images/gallery.png">
+            <h4>Photo Gallery Webpage</h4>
+            <p><i>Simple website for displaying photographs that I've taken and images I've edited.</i></p>
           </div>
         </a> 
 
         <!-- ToDo List -->
         <a href="todo.html" title="Click to open this webpage in a new tab" target="_blank" alt="A screenshot of my todo app"> 
           <div class="project">
-            <img class="project" src="images/todo.png">
-            <p class="black"><strong>To-Do List</strong></p>
-            <p class="black"><i>My version of the infamous, low-functionality to-do list ;). It focuses mostly on CSS styling with jQuery events.</i></p>
+            <img class="project-img" src="images/todo.png">
+            <h4>To-Do List</h4>
+            <p><i>My version of the infamous, low-functionality to-do list ;). It focuses mostly on CSS styling with jQuery events.</i></p>
           </div>
         </a> 
         
@@ -180,9 +177,9 @@
           <div class="project">
             <div id="github-more-div">
               <i id="github-projects-icon" class="fa fa-github" aria-hidden="true"></i> 
-              &emsp; &emsp; &ensp;
+              &emsp; &emsp; &ensp; &nbsp;
               <i id="github-plus-icon" class="fa fa-plus" aria-hidden="true"></i>
-              <p class="black"><strong>See more on Github</strong></p>
+              <h4>See more on Github</h4>
             </div>
           </div>
         </a>
@@ -194,7 +191,7 @@
       <block id="contact"> 
         <h2>Contact Info</h2>
         <h3>
-          <a href="mailto:g.venezia@outlook.com>g.venezia@outlook.com">Email:</a> &nbsp; &nbsp; g.venezia@outlook.com
+          <a href="mailto:g.venezia@outlook.com>g.venezia@outlook.com">Email:</a> &ensp; g.venezia@outlook.com
         </h3>
         
         <a href="https://www.linkedin.com/in/gvenezia/" target:"_blank">
@@ -203,7 +200,7 @@
       </block>
 
       
-      <a id="footer-link" href="#top">
+      <a href="#">
         <footer>
           <i class="fa fa-arrow-up" aria-hidden="true"></i> &nbsp Back to the top <i class="fa fa-arrow-up" aria-hidden="true"></i>
         </footer>
