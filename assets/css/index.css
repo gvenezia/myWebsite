@@ -114,25 +114,6 @@ footer:hover > .fa-arrow-up {
   text-decoration: none;
 }
 
-/* Underline animation for the nav links*/
-  .nav-buttons a {
-    display: inline-block;
-  }
-
-  .nav-buttons a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #cca300;
-    transition: width .3s;
-  }
-
-  .nav-buttons a:hover::after {
-    width: 100%;
-      /*//transition: width .3s;*/
-  }
-
 .profile-pic {
   float: right;
   border-radius: 50%;
@@ -339,11 +320,32 @@ li .fa-github {
   }
 }
 
-/* For sizes bigger than medium/tablet, enable the pronunciation to show on */
+/* For sizes bigger than medium/tablet, 
+   enable the pronunciation to show on
+   enable nav-link underline animation */
 @media (min-width: 768px) {
   h1:hover {
     padding-left: 45px;
     padding-right: 55px;
     transition: .1s linear;
+  }
+
+  /* Underline animation for the nav links*/
+  .nav-buttons a {
+    display: inline-block;
+  }
+
+  .nav-buttons a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #cca300;
+    transition: width .3s;
+  }
+
+  .nav-buttons a:hover::after {
+    width: 100%;
+      /*//transition: width .3s;*/
   }
 }
