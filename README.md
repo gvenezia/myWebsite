@@ -4,7 +4,8 @@
 
 ## How was it built?
 The homepage is written in plain HTML and CSS. 
-*Note: Each of the projects has its own respective repository and 'readme'. I've kept the projects in this repository's folders in order to show how I've structured the files for my website.*
+
+(*Note: Each of the projects has its own respective repository and 'readme'. I've kept the projects in this repository's folders in order to show how I've structured the files for my website.*)
 
 I use CSS @media queries for responsive design (I use Bootstrap's breakpoints, but no actual Bootstrap code).
 
