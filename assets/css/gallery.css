@@ -50,6 +50,7 @@ a:visited {
 
 .img-fluid {
 	margin: 10px auto;
+	max-width: 100%; height: auto;
 }
 
 .in-progress {
