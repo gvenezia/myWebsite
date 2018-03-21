@@ -46,11 +46,11 @@
 
     <!-- Color div with my name and pronunciation on hover -->
     <h1 id="heading">
-      Gaetano <span class="pronunciation">Guy-'TAH-no</span> 
-      <br>Venezia <span class="pronunciation">Veh-'NEH-tsee-uh</span>
+      Gaetano<span class="pronunciation"> Guy-'TAH-no</span><br>Venezia<span class="pronunciation"> Veh-'NEH-tsee-uh</span>
     </h1>
 
-    <!-- Social media fa icons --> <!-- the </i></a> starts the next line in order to prevent inserted spacing (unclear why this happens, as it didn't happen in Font Awesome 4, check up on this issue) -->
+    <!-- Social media fa icons --> 
+      <!-- the </i></a> starts the next line in order to prevent inserted spacing (unclear why this happens, as it didn't happen in Font Awesome 4, check up on this issue) -->
     <div class="fa5-icons">
       <a href="https://github.com/gvenezia" target="_blank"><i class="fab fa-github" data-fa-transform="shrink-6 " data-fa-mask="fas fa-circle">
       </i></a><a href="https://www.linkedin.com/in/gvenezia/" target="_blank"><i class="fab fa-linkedin-in" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle">
@@ -61,25 +61,14 @@
       </i></a><a href="https://www.goodreads.com/user/show/7128727-gaetano-venezia" target="_blank"><i class="fab fa-goodreads-g" data-fa-transform="shrink-8 down-1.5" data-fa-mask="fas fa-circle"></i></a>
     </div>
 
-   <!--  <ul class="nav social-icons">
-      <li><a href="https://github.com/gvenezia" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
-      <li title="LinkedIn"><a href="https://www.linkedin.com/in/gvenezia/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-      <li title="Free Code Camp"><a href="https://www.freecodecamp.org/gvenezia" target="_blank" class="social-icon"> <i class="fa fa-free-code-camp"></i></a></li>
-      <li title="Code Pen"><a href="https://codepen.io/gvenezia/" target="_blank" class="social-icon"> <i class="fa fa-codepen"></i></a>
-      <li title="Facebook"><a href="https://www.facebook.com/guyvenezia" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-      <li title="Last-FM"><a href="https://www.last.fm/user/grrtano" target="_blank" class="social-icon"> <i class="fa fa-lastfm"></i></a></li>
-    </ul>
-    <p style="clear:both"></p>   --><!-- Clear the styles -->
-
     <!-- Navigation links -->
-    <div class="nav-buttons">
-      <p class="nav-button "><a class="abt-link" href="#about">About Me</a></p>
+    <div id="nav-buttons">
+      <p class="nav-button"><a href="#about">About Me</a></p>
       &ensp; | &ensp;
-      <p class="nav-button projects-link"><a href="#projects">My Projects</a></p>
+      <p class="nav-button"><a href="#projects">My Projects</a></p>
       &ensp; | &ensp;
-      <p class="nav-button contact-link"><a href="#contact">Contact</a></p>
+      <p class="nav-button"><a href="#contact">Contact</a></p>
     </div>
-    <br>
 
     <!-- About me div -->
     <div id="about"> 
@@ -102,128 +91,125 @@
         <li>and more... like Semantic UI, paper.js, and Mongoose </li>
       </ul>
     </div>  
-      <p style="clear:both"></p>
-      <br>
 
-      <!-- Projects div -->
-      <div id="projects"> 
-        <h2>Here are some of my projects!</h2>
+    <!-- Projects div -->
+    <div id="projects"> 
+      <h2>Here are some of my projects!</h2>
 
-        <!-- Basic Circuitry for Kids! -->  <!-- Add a hackathon badge -->
-        <a href="https://github.com/gvenezia/basic-circuitry-for-kids" title="Click to see this project on Github" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Picture of the circuitry project" src="images/circuitryKids.png">
-            <h4>Basic Circuitry for Kids!</h4>
-            <p>Small interactive lessons teach the basics of circuitry. The web interface interacts with an Arduino board to produce feedback through lights.</p>
-          </div>
-        </a>
-
-        <!-- Home-ing Network --> <!-- Add a hackathon badge -->
-        <a href="https://github.com/2karis/CPForum" title="Click to see the project on Github" target="_blank">
-          <div class="project">
-            <img class="project-img" alt="Home-ing Network Logo" src="https://image.flaticon.com/icons/png/512/25/25694.png">
-            <h4>Home-ing Network</h4>
-            <p>Designed to crowdsource information on the location of homeless people around Atlanta.</p>
-          </div>
-        </a>
-
-        <!-- Mock Blog -->
-        <a href="https://mock-blog.herokuapp.com/" title="Click to see this project on Github" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Picture of the mock blog project" src="images/mockBlog1.png">
-            <h4>Mock Blog</h4>
-            <p><i>A working framework for a standard blog site (MEN stack). Styled with Semantic UI and masonry.js (for a cascading grid of images.)</i></p>
-          </div>
-        </a> 
-
-        <!-- RGB Game -->
-        <a href="rgbGame.html" title="Click to open this webpage in a new tab" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Screenshot of the RGB game" src="images/rgbGame.png">
-            <h4>RGB Color Guessing Game</h4>
-            <p><i>A simple javascript-run game where you guess which square has the correct rgb value.</i></p>
-          </div>
-        </a> 
-
-        <!-- City Select -->
-        <a href="https://city-select.herokuapp.com/" title="Click to see this project on github" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Screenshot of the City Select project" src="images/citySelect.png">
-            <h4>City Select</h4>
-            <p><i>A city review site that helps users better plan their next vacation or move. Uses a MEN stack, RESTful routing, vanilla JS, and more.</i></p>
-          </div>
-        </a>
-
-        <!-- Patatap Clone -->
-        <a href="tapapat.html" title="Click to open this webpage in a new tab" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Screenshot of the Tapapat App" src="images/tapapat.png">
-            <h4>Tapapat</h4>
-            <p><i>An interactive sound and animation kit inspired by Patatap. Utilizes paper.js and howler.js. (No mobile support yet)</i></p>
-          </div>
-        </a> 
-
-        <!-- Twitch TV Viewer -->
-        <a href="https://github.com/gvenezia/twitch-TV-viewer" title="Click to see this project on github" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Screenshot of the Twitch TV project" src="images/twitchVert.png">
-            <h4>Twitch TV Channel Viewer</h4>
-            <p><i>This webpage renders the current status of some of the most popular twitch.tv channels with the Twitch API, vanilla JS, and Bootstrap.</i></p>
-          </div>
-        </a>
-
-        <!-- Photo Gallery -->
-        <a href="gallery.html" title="Click to open this webpage in a new tab" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Screenshot of the photo gallery project" src="images/gallery.png">
-            <h4>Photo Gallery Webpage</h4>
-            <p><i>Simple website for displaying photographs that I've taken and images I've edited.</i></p>
-          </div>
-        </a> 
-
-        <!-- ToDo List -->
-        <a href="todo.html" title="Click to open this webpage in a new tab" target="_blank"> 
-          <div class="project">
-            <img class="project-img" alt="Screenshot of the to-do list web app" src="images/todo.png">
-            <h4>To-Do List</h4>
-            <p><i>My version of the infamous, low-functionality to-do list ;). It focuses mostly on CSS styling with jQuery events.</i></p>
-          </div>
-        </a> 
-        
-        <!-- Github More -->
-        <a href="https://github.com/gvenezia" title="Click to see more of my projects on github" target="_blank"> 
-          <div class="project">
-            <div id="github-more-div">
-              <i id="github-projects-icon" class="fab fa-github"></i> 
-              <i id="github-plus-icon" class="fas fa-plus"></i>
-              <h4>See more on Github</h4>
-            </div>
-          </div>
-        </a>
-      </div> 
-      <p style="clear:both"></p>
-      <br>
-
-      <!-- Contact Info div -->
-      <div id="contact"> 
-        <h2>Contact Info</h2>
-        <h3>
-          <a href="mailto:g.venezia@outlook.com">Email:</a> &ensp; g.venezia@outlook.com
-        </h3>
-        
-        <a href="https://www.linkedin.com/in/gvenezia/" target="_blank">
-          <h3>LinkedIn</h3>
-        </a>
-      </div>
-
-      
-      <a href="#">
-        <footer>
-          <i class="fas fa-arrow-up"></i></i> &nbsp; Back to the top <i class="fas fa-arrow-up"></i>
-        </footer>
+      <!-- Basic Circuitry for Kids! -->  <!-- Add a hackathon badge -->
+      <a href="https://github.com/gvenezia/basic-circuitry-for-kids" title="Click to see this project on Github" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Picture of the circuitry project" src="images/circuitryKids.png">
+          <h4>Basic Circuitry for Kids!</h4>
+          <p>Small interactive lessons teach the basics of circuitry. The web interface interacts with an Arduino board to produce feedback through lights.</p>
+        </div>
       </a>
 
-      <!-- Personal JS -->
-      <script src="assets/js/index.js"></script>
+      <!-- Home-ing Network --> <!-- Add a hackathon badge -->
+      <a href="https://github.com/2karis/CPForum" title="Click to see the project on Github" target="_blank">
+        <div class="project">
+          <img class="project-img" alt="Home-ing Network Logo" src="https://image.flaticon.com/icons/png/512/25/25694.png">
+          <h4>Home-ing Network</h4>
+          <p>Designed to crowdsource information on the location of homeless people around Atlanta.</p>
+        </div>
+      </a>
+
+      <!-- Mock Blog -->
+      <a href="https://mock-blog.herokuapp.com/" title="Click to see this project on Github" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Picture of the mock blog project" src="images/mockBlog1.png">
+          <h4>Mock Blog</h4>
+          <p>A responsive, functional framework for an image-led blog or website (MEN stack). Styled with Semantic UI and masonry.js (for a cascading grid of images.)</p>
+        </div>
+      </a> 
+
+      <!-- RGB Game -->
+      <a href="rgbGame.html" title="Click to open this webpage in a new tab" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Screenshot of the RGB game" src="images/rgbGame.png">
+          <h4>RGB Color Guessing Game</h4>
+          <p>A simple javascript-run game where you guess which square has the correct rgb value.</p>
+        </div>
+      </a> 
+
+      <!-- City Select -->
+      <a href="https://city-select.herokuapp.com/" title="Click to see this project on github" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Screenshot of the City Select project" src="images/citySelect.png">
+          <h4>City Select</h4>
+          <p>A city review site that helps users better plan their next vacation or move. Uses a MEN stack, RESTful routing, vanilla JS, and more.</p>
+        </div>
+      </a>
+
+      <!-- Patatap Clone -->
+      <a href="tapapat.html" title="Click to open this webpage in a new tab" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Screenshot of the Tapapat App" src="images/tapapat.png">
+          <h4>Tapapat</h4>
+          <p>An interactive sound and animation kit inspired by Patatap. Utilizes paper.js and howler.js. (No mobile support yet)</p>
+        </div>
+      </a> 
+
+      <!-- Twitch TV Viewer -->
+      <a href="https://github.com/gvenezia/twitch-TV-viewer" title="Click to see this project on github" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Screenshot of the Twitch TV project" src="images/twitchVert.png">
+          <h4>Twitch TV Channel Viewer</h4>
+          <p>This webpage renders the current status of some of the most popular twitch.tv channels with the Twitch API, vanilla JS, and Bootstrap.</p>
+        </div>
+      </a>
+
+      <!-- Photo Gallery -->
+      <a href="gallery.html" title="Click to open this webpage in a new tab" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Screenshot of the photo gallery project" src="images/gallery.png">
+          <h4>Photo Gallery Webpage</h4>
+          <p>Simple website for displaying photographs that I've taken and images I've edited.</p>
+        </div>
+      </a> 
+
+      <!-- ToDo List -->
+      <a href="todo.html" title="Click to open this webpage in a new tab" target="_blank"> 
+        <div class="project">
+          <img class="project-img" alt="Screenshot of the to-do list web app" src="images/todo.png">
+          <h4>To-Do List</h4>
+          <p>My version of the infamous, low-functionality to-do list ;). It focuses mostly on CSS styling with jQuery events.</p>
+        </div>
+      </a> 
+      
+      <!-- Github More -->
+      <a href="https://github.com/gvenezia" title="Click to see more of my projects on github" target="_blank"> 
+        <div class="project">
+          <div id="github-more-div">
+            <i id="github-projects-icon" class="fab fa-github"></i> 
+            <i id="github-plus-icon" class="fas fa-plus"></i>
+            <h4>See more on Github</h4>
+          </div>
+        </div>
+      </a>
+    </div> 
+    <p style="clear:both"></p>
+
+    <!-- Contact Info div -->
+    <div id="contact"> 
+      <h2>Contact Info</h2>
+      <h3>
+        <a href="mailto:g.venezia@outlook.com">Email:</a> &ensp; g.venezia@outlook.com
+      </h3>
+      
+      <a href="https://www.linkedin.com/in/gvenezia/" target="_blank">
+        <h3>LinkedIn</h3>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <a href="#">
+      <footer>
+        <i class="fas fa-arrow-up"></i> &nbsp; Back to the top &nbsp; <i class="fas fa-arrow-up"></i>
+      </footer>
+    </a>
+
+    <!-- Personal JS -->
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

@@ -65,6 +65,10 @@ a:active {
     color: #ff471a;
 }
 
+ul {
+  list-style: square;
+}
+
 /* Text in the projects (since it is all a link) */
 a p, h4 {
   text-decoration: none;
@@ -84,8 +88,11 @@ a footer {
   color: white;
 }
 
-ul {
-  list-style: square;
+#nav-buttons,
+#about,
+#projects,
+#contact {
+  margin-top: 75px;
 }
 
 footer {
@@ -105,8 +112,17 @@ footer:hover > .fa-arrow-up {
 }
 
 /* Classes in alphabetical order */
+.fa5-icons {
+  margin: 0px 45px;
+}
+
+.fa5-icons > a {
+  padding: 0px 1px;
+  font-size: 2.25rem;
+}
+
 .nav {
-  margin: 0 15px;
+  margin: 0px 15px;
   list-style: none;
 }
 
@@ -114,30 +130,10 @@ footer:hover > .fa-arrow-up {
   display: inline;
 }
 
-.fa5-icons {
-  margin: 0px 45px;
-}
-
-.fa5-icons a {
-  padding: 0px 1px;
-  font-size: 2.25rem;
-}
-
-.nav-buttons {
-  border: 5px solid #333;
-  padding: 15px;
-  margin: auto auto;
-  font-family: Kreon;
-  font-size: 1.45rem;
-  font-weight: 400;
-  text-decoration: none;
-}
-
 .profile-pic {
   float: right;
   border-radius: 50%;
   padding: 15px;
-  max-width: 100%;
   width: 30%;
 }
 
@@ -152,6 +148,10 @@ footer:hover > .fa-arrow-up {
   box-sizing: border-box;
 }
 
+.project p {
+  font-style: italic;
+}
+
 /* why won't this select the project? */
 /*div.project:nth-of-type(even){ 
   margin-right: 0px;
@@ -161,11 +161,9 @@ div.project:hover {
   background-color: #efefef;
 }
 
-
 .project-img {
   padding: 1%;
   float: right;
-  box-sizing: border-box;
   max-width: 150px;
   height: auto;
   margin: 7px 7px 0px 7px;
@@ -185,32 +183,7 @@ div.project:hover {
   transition: .1s linear;
 }
 
-.social-icons {
-  padding: 0px 35px;
-}
-
-.social-icons .social-icon {
-  margin: 0px;
-  float: left;
-}
-
 /* Font Awesome classes, alphabetic */
-
-/*.fa {
-    padding: 8px;
-    width: 18px;
-    text-align: center;
-    border: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    opacity: .8;
-    color: white;
-}*/
-
-.fab {
-  padding: 0px 0px;
-}
-
 .fa-codepen {
   color: #4d4d4d;
 }
@@ -242,6 +215,14 @@ div.project:hover {
 /* ID 's, sorted alphabetically */
 #about p {
   font-style: italic;
+}
+
+#nav-buttons {
+  border: 5px solid #333;
+  padding: 15px;
+  margin: auto auto;
+  font-family: Kreon;
+  font-size: 1.45rem;
 }
 
 #github-more-div {
@@ -277,7 +258,7 @@ div.project:hover {
     height: 340px;
   }
 
-  .nav-buttons {
+  #nav-buttons {
     font-size: 1.35rem;
   }
 }
@@ -310,25 +291,16 @@ div.project:hover {
 
   h1 {
     font-size: 3.5rem;
+    text-align: center;
+  }
+
+  footer {
+    font-size: 1.5rem;
   }
 
   .fa5-icons {
-  margin: auto auto;
-  text-align: center;
-}
-
- /* .social-icons {
-    padding: 1px 12%;
     margin: auto auto;
-  }
-
-   Keep the icons at 20px to retain the styling 
-  .social-icon {
-    font-size: 20px;
-  }*/
-
-  .nav-buttons {
-    font-size: 1.05rem;
+    text-align: center;
   }
 
   .project-img {
@@ -336,8 +308,9 @@ div.project:hover {
     height: auto;
   }
 
-  footer {
-    font-size: 1.5rem;
+  #nav-buttons {
+    font-size: 1.05rem;
+    text-align: center;
   }
 }
 
@@ -352,11 +325,11 @@ div.project:hover {
   }
 
   /* Underline animation for the nav links*/
-  .nav-buttons a {
+  #nav-buttons a {
     display: inline-block;
   }
 
-  .nav-buttons a::after {
+  #nav-buttons a::after {
     content: '';
     display: block;
     width: 0;
@@ -365,7 +338,7 @@ div.project:hover {
     transition: width .3s;
   }
 
-  .nav-buttons a:hover::after {
+  #nav-buttons a:hover::after {
     width: 100%;
       /*//transition: width .3s;*/
   }
