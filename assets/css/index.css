@@ -22,15 +22,25 @@ h1:hover span {
     transition: .2s linear;
   }
 
+svg {
+  opacity: .8;
+  padding: 0px 0px;
+}
+
+svg:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
 h2 {
   font-family: Dosis;
   font-size: 2em;
   border-bottom: 25px solid #ffd480;  
 }
 
-li a:hover {
+/*li a:hover {
   opacity: .8;
-}
+}*/
 
 /* Standard link behavior */
 a,
@@ -102,6 +112,15 @@ footer:hover > .fa-arrow-up {
 
 .nav-button {
   display: inline;
+}
+
+.fa5-icons {
+  margin: 0px 45px;
+}
+
+.fa5-icons a {
+  padding: 0px 1px;
+  font-size: 2.25rem;
 }
 
 .nav-buttons {
@@ -177,7 +196,7 @@ div.project:hover {
 
 /* Font Awesome classes, alphabetic */
 
-.fa {
+/*.fa {
     padding: 8px;
     width: 18px;
     text-align: center;
@@ -186,42 +205,38 @@ div.project:hover {
     border-radius: 50%;
     opacity: .8;
     color: white;
+}*/
+
+.fab {
+  padding: 0px 0px;
 }
 
 .fa-codepen {
-  background: #4d4d4d;
-  padding-right: 10px;
-  padding-left: 8px;
+  color: #4d4d4d;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    padding-right: 9px;
-    padding-left: 9px;
+.fa-facebook-f {
+    color: #3B5998;
 }
 
 .fa-free-code-camp {
-  background: #2eb82e;
-  padding-right: 13px;
-  padding-left: 5px;
+  color: #2eb82e;
 }
 
-li .fa-github {
-  background: #4d4d4d;
-  padding-right: 9px;
-  padding-left: 9px;
+.fa5-icons .fa-github {
+  color: #4d4d4d;
 }
 
 .fa-lastfm {
-  background: #ff1a1a;
-  padding-right: 10px;
-  padding-left: 8px
+  color: #ff1a1a;
 }
 
-.fa-linkedin {
-  background: #007bb5;
-  padding-right: 9px;
-  padding-left: 9px;
+.fa-linkedin-in {
+  color: #007bb5;
+}
+
+.fa-goodreads-g {
+  color: #553b08;
 }
 
 /* ID 's, sorted alphabetically */
@@ -230,21 +245,22 @@ li .fa-github {
 }
 
 #github-more-div {
+  color: #333;
   text-align: center;
   margin-top: 10px;
 }
 
+#github-more-div i {
+  display: inline-block;  
+}
+
 #github-projects-icon {
-  color: #333;
   font-size: 7rem;
-  display: inline-block;
 }
 
 #github-plus-icon {
-  color: #333;
   font-size: 2.5rem;
-  display: inline-block;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
 }
 
 
@@ -296,15 +312,20 @@ li .fa-github {
     font-size: 3.5rem;
   }
 
-  .social-icons {
+  .fa5-icons {
+  margin: auto auto;
+  text-align: center;
+}
+
+ /* .social-icons {
     padding: 1px 12%;
     margin: auto auto;
   }
 
-  /* Keep the icons at 20px to retain the styling */
+   Keep the icons at 20px to retain the styling 
   .social-icon {
     font-size: 20px;
-  }
+  }*/
 
   .nav-buttons {
     font-size: 1.05rem;

@@ -31,6 +31,9 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Aweomse 5 -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:500,700%7CKreon:400,700" rel="stylesheet"> <!-- H/t @steveax on StackOverflow for the fix to a W3 validation error: "Url encode the | (pipe characters) in the href attribute (%7C)" See https://stackoverflow.com/questions/22466913/google-fonts-url-break-html5-validation-on-w3-org -->
@@ -47,8 +50,18 @@
       <br>Venezia <span class="pronunciation">Veh-'NEH-tsee-uh</span>
     </h1>
 
-    <!-- Social media fa icons -->
-    <ul class="nav social-icons">
+    <!-- Social media fa icons --> <!-- the </i></a> starts the next line in order to prevent inserted spacing (unclear why this happens, as it didn't happen in Font Awesome 4, check up on this issue) -->
+    <div class="fa5-icons">
+      <a href="https://github.com/gvenezia" target="_blank"><i class="fab fa-github" data-fa-transform="shrink-6 " data-fa-mask="fas fa-circle">
+      </i></a><a href="https://www.linkedin.com/in/gvenezia/" target="_blank"><i class="fab fa-linkedin-in" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle">
+      </i></a><a href="https://www.freecodecamp.org/gvenezia" target="_blank"><i class="fab fa-free-code-camp" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle">
+      </i></a><a href="https://codepen.io/gvenezia/" target="_blank"><i class="fab fa-codepen" data-fa-transform="shrink-7" data-fa-mask="fas fa-circle">
+      </i></a><a href="https://www.facebook.com/guyvenezia" target="_blank"><i class="fab fa-facebook-f" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle">
+      </i></a><a href="https://www.last.fm/user/grrtano" target="_blank"><i class="fab fa-lastfm" data-fa-transform="shrink-7 down-.5" data-fa-mask="fas fa-circle">
+      </i></a><a href="https://www.goodreads.com/user/show/7128727-gaetano-venezia" target="_blank"><i class="fab fa-goodreads-g" data-fa-transform="shrink-8 down-1.5" data-fa-mask="fas fa-circle"></i></a>
+    </div>
+
+   <!--  <ul class="nav social-icons">
       <li><a href="https://github.com/gvenezia" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
       <li title="LinkedIn"><a href="https://www.linkedin.com/in/gvenezia/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
       <li title="Free Code Camp"><a href="https://www.freecodecamp.org/gvenezia" target="_blank" class="social-icon"> <i class="fa fa-free-code-camp"></i></a></li>
@@ -56,7 +69,7 @@
       <li title="Facebook"><a href="https://www.facebook.com/guyvenezia" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
       <li title="Last-FM"><a href="https://www.last.fm/user/grrtano" target="_blank" class="social-icon"> <i class="fa fa-lastfm"></i></a></li>
     </ul>
-    <p style="clear:both"></p> <!-- Clear the styles -->
+    <p style="clear:both"></p>   --><!-- Clear the styles -->
 
     <!-- Navigation links -->
     <div class="nav-buttons">
@@ -181,9 +194,8 @@
         <a href="https://github.com/gvenezia" title="Click to see more of my projects on github" target="_blank"> 
           <div class="project">
             <div id="github-more-div">
-              <i id="github-projects-icon" class="fa fa-github" aria-hidden="true"></i> 
-              &emsp; &emsp; &ensp; &nbsp;
-              <i id="github-plus-icon" class="fa fa-plus" aria-hidden="true"></i>
+              <i id="github-projects-icon" class="fab fa-github"></i> 
+              <i id="github-plus-icon" class="fas fa-plus"></i>
               <h4>See more on Github</h4>
             </div>
           </div>
@@ -207,7 +219,7 @@
       
       <a href="#">
         <footer>
-          <i class="fa fa-arrow-up" aria-hidden="true"></i> &nbsp; Back to the top <i class="fa fa-arrow-up" aria-hidden="true"></i>
+          <i class="fas fa-arrow-up"></i></i> &nbsp; Back to the top <i class="fas fa-arrow-up"></i>
         </footer>
       </a>
 
