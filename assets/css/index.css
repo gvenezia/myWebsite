@@ -58,7 +58,7 @@ a:link {
 
 a:visited,
 a:hover {
-    color: #cca300;
+    color: #CCA049;
 }
 
 a:active {
@@ -204,7 +204,7 @@ div.project:hover {
   color: #ff1a1a;
 }
 
-.fa-linkedin-in {
+.fa5-icons .fa-linkedin-in {
   color: #007bb5;
 }
 
@@ -334,7 +334,7 @@ div.project:hover {
     display: block;
     width: 0;
     height: 2px;
-    background-color: #cca300;
+    background-color: #CCA049;
     transition: width .3s;
   }
 
