@@ -56,7 +56,6 @@ ul {
   list-style: square;
 }
 
-/* Text in the projects (since it is all a link) */
 a p, a h4 {
   text-decoration: none;
   color: #333;
@@ -67,8 +66,7 @@ footer {
   font-size: 2rem;
   color: white;
   background-color: #7997A2;
-  margin-top: 100px;
-  margin-bottom: 0px;
+  margin-top: 100px auto 0px;
   padding: 40px 10px;
   text-align: center;
 }
@@ -102,6 +100,16 @@ footer:hover .fa-arrow-up {
   cursor: pointer;
 }
 
+.hackathon-badge {
+  float: right;
+  width: 0;
+  height: 0;
+  transform: translate(-80px, 15px);
+    -ms-transform: translate(-80px, 15px); /* IE 9 */
+    -webkit-transform: translate(-80px, 15px); /* Safari */
+  
+}
+
 .nav {
   margin: 0px 15px;
   list-style: none;
@@ -128,6 +136,7 @@ footer:hover .fa-arrow-up {
   height: 270px;
   box-sizing: border-box;
   line-height: 1.1;
+  overflow: visible;
 }
 
 .project p {
@@ -158,7 +167,21 @@ footer:hover .fa-arrow-up {
   transition: .1s linear;
 }
 
-/* Font Awesome classes, alphabetic */
+/* Font Awesome classes, sorted by use */
+/*=====================================*/
+
+/* Hackathon Badge */
+.fa-certificate {
+  color: #7997A2;
+}
+
+.fa-layers-text {
+  font-family: Dosis;
+  font-weight: 900;
+}
+
+
+/* Social Links above navbar */
 .fa-codepen {
   color: #4d4d4d;
 }
