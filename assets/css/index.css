@@ -1,4 +1,5 @@
 /* HTML Elements, ordered by appearance on the page */
+/*==================================================*/
 body {
   font-family: Kreon, "Lucida Console", Monaco, Helvetica;
   font-size: 20px;
@@ -56,16 +57,9 @@ ul {
 }
 
 /* Text in the projects (since it is all a link) */
-a p, h4 {
+a p, a h4 {
   text-decoration: none;
   color: #333;
-}
-
-#nav-buttons,
-#about,
-#projects,
-#contact {
-  margin-top: 65px;
 }
 
 footer {
@@ -86,8 +80,16 @@ footer:hover > .fa-arrow-up {
 }
 
 /* Classes in alphabetical order */
+/*===============================*/
 .fa5-icons {
   margin: 0px 45px;
+  overflow: auto;
+}
+
+.fa5-icons a {
+  padding: 0px 0px;
+  font-size: 2.25rem;
+  float: left;
 }
 
 .fa5-icons svg {
@@ -98,11 +100,6 @@ footer:hover > .fa-arrow-up {
 .fa5-icons svg:hover {
   opacity: .6;
   cursor: pointer;
-}
-
-.fa5-icons a {
-  padding: 0px 1px;
-  font-size: 2.25rem;
 }
 
 .nav {
@@ -135,11 +132,6 @@ footer:hover > .fa-arrow-up {
 
 .project p {
   font-style: italic;
-}
-
-/* Thanks to @Michael_B for explaining nested :nth-child selectors on SO: https://stackoverflow.com/questions/41867097/why-is-nth-child-selector-not-working */
-#projects a:nth-child(odd) div { 
-  margin-right: 0%;
 }
 
 .project:hover {
@@ -200,6 +192,14 @@ footer:hover > .fa-arrow-up {
 }
 
 /* ID 's, sorted alphabetically */
+/*==============================*/
+#about,
+#contact
+#nav-buttons,
+#projects {
+  margin-top: 65px;
+}
+
 #about p {
   font-style: italic;
 }
@@ -229,6 +229,10 @@ footer:hover > .fa-arrow-up {
 #projects {
   overflow: auto;
 }
+
+#projects a:nth-child(odd) div { 
+  margin-right: 0%;
+} /* Thanks to @Michael_B for explaining nested :nth-child selectors on SO: https://stackoverflow.com/questions/41867097/why-is-nth-child-selector-not-working */
 
 /* Media Queries (I use Bootstrap's breakpoints) */
   /* the default size is Extra Large (>991px) */
