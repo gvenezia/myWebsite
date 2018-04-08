@@ -100,7 +100,7 @@ footer:hover > .fa-arrow-up {
   cursor: pointer;
 }
 
-.fa5-icons > a {
+.fa5-icons a {
   padding: 0px 1px;
   font-size: 2.25rem;
 }
@@ -125,21 +125,22 @@ footer:hover > .fa-arrow-up {
 .project {
   border: 10px solid #FFCCCC;
   padding: 7px;
-  margin: 4px 1% 4px 0px;
+  margin: 5px 1% 5px 0%;
   float: left;
-  width: 49%;
+  width: 49.5%;
   height: 270px;
   box-sizing: border-box;
+  line-height: 1.1;
 }
 
 .project p {
   font-style: italic;
 }
 
-/* why won't this select the project? */
-/*#projects .project:nth-child(even){ 
+/* Thanks to @Michael_B for explaining nested :nth-child selectors on SO: https://stackoverflow.com/questions/41867097/why-is-nth-child-selector-not-working */
+#projects a:nth-child(odd) div { 
   margin-right: 0%;
-}*/
+}
 
 .project:hover {
   background-color: #efefef;
