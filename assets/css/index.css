@@ -74,7 +74,7 @@ footer {
 footer:hover .fa-arrow-up {
   opacity: 0;
   transform: translateY(-300%);
-  transition: 2s ease-out, opacity .75s;
+  transition: 1s ease-out, opacity .75s;
 }
 
 /* Classes in alphabetical order */
@@ -167,52 +167,57 @@ footer:hover .fa-arrow-up {
   transition: .1s linear;
 }
 
-/* Font Awesome classes, sorted by use */
+/* Font Awesome classes, sorted by appearance on the page */
 /*=====================================*/
 
-/* Hackathon Badge */
-.fa-certificate {
-  color: #7997A2;
-}
+  /* Social Links above navbar */
+  .fa-codepen {
+    color: #4d4d4d;
+  }
 
-.fa-layers-text {
-  font-family: Dosis;
-  font-weight: 900;
-}
+  .fa-facebook-f {
+      color: #3B5998;
+  }
 
+  .fa-free-code-camp {
+    color: #2eb82e;
+  }
 
-/* Social Links above navbar */
-.fa-codepen {
-  color: #4d4d4d;
-}
+  .fa5-icons .fa-github {
+    color: #4d4d4d;
+  }
 
-.fa-facebook-f {
-    color: #3B5998;
-}
+  .fa-instagram {
+    color: #DB3075;
+  }
 
-.fa-free-code-camp {
-  color: #2eb82e;
-}
+  .fa-lastfm {
+    color: #ff1a1a;
+  }
 
-.fa5-icons .fa-github {
-  color: #4d4d4d;
-}
+  .fa5-icons .fa-linkedin-in {
+    color: #007bb5;
+  }
 
-.fa-instagram {
-  color: #DB3075;
-}
+  .fa-goodreads-g {
+    color: #553b08;
+  }
 
-.fa-lastfm {
-  color: #ff1a1a;
-}
+  /* Hackathon Badge */
+  .fa-certificate {
+    color: #7997A2;
+  }
 
-.fa5-icons .fa-linkedin-in {
-  color: #007bb5;
-}
+  .fa-layers-text {
+    font-family: Dosis;
+    font-weight: 900;
+  }
 
-.fa-goodreads-g {
-  color: #553b08;
-}
+  /* Footer Arrows */
+  .fa-arrow-up {
+    transition: 2s ease-out, opacity 3s;
+  }
+
 
 /* ID 's, sorted alphabetically */
 /*==============================*/
