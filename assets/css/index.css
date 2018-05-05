@@ -3,7 +3,7 @@
 body {
   font-family: Kreon, "Lucida Console", Monaco, Helvetica;
   font-size: 20px;
-  margin: 2% auto 0px auto;
+  margin: 2% auto 0 auto;
   width: 80%;
   max-width: 900px;
   color: #333;
@@ -15,7 +15,7 @@ h1 {
   font-size: 4em; 
   background-color: #ffcccc; 
   padding: 50px; 
-  margin: 0px;
+  margin: 0;
 }
 
 h1:hover .pronunciation {
@@ -68,7 +68,8 @@ ul {
   list-style: square;
 }
 
-a p, a h4 {
+a p, 
+a h4 {
   text-decoration: none;
   color: #333;
 }
@@ -78,7 +79,7 @@ footer {
   font-size: 2rem;
   color: white;
   background-color: #7997A2;
-  margin-top: 100px auto 0px;
+  margin-top: 100px auto 0;
   padding: 40px 10px;
   text-align: center;
 }
@@ -92,19 +93,19 @@ footer:hover .fa-arrow-up {
 /* Classes in alphabetical order */
 /*===============================*/
 .fa5-icons {
-  margin: 0px 45px;
+  margin: 0 45px;
   overflow: auto;
 }
 
 .fa5-icons a {
-  padding: 0px 0px;
+  padding: 0;
   font-size: 2.25rem;
   float: left;
 }
 
 .fa5-icons svg {
   opacity: .8;
-  padding: 0px 0px;
+  padding: 0;
 }
 
 .fa5-icons svg:hover {
@@ -133,7 +134,7 @@ footer:hover .fa-arrow-up {
 .project {
   border: 10px solid #FFCCCC;
   padding: 7px;
-  margin: 5px 1% 5px 0%;
+  margin: 5px 1% 5px 0;
   float: left;
   width: 49.5%;
   height: 270px;
@@ -155,7 +156,7 @@ footer:hover .fa-arrow-up {
   float: right;
   max-width: 150px;
   height: auto;
-  margin: 7px 7px 0px 7px;
+  margin: 7px 7px 0 7px;
   background-color: #FFCCCC;
   border-radius: 5%;
 }
@@ -254,7 +255,7 @@ nav,
 }
 
 #projects a:nth-child(odd) div { 
-  margin-right: 0%;
+  margin-right: 0;
 } /* Thanks to @Michael_B for explaining nested :nth-child selectors on SO: https://stackoverflow.com/questions/41867097/why-is-nth-child-selector-not-working */
 
 
@@ -328,7 +329,7 @@ nav,
   }
 
   .fa5-icons a {
-    padding: 0px 0px;
+    padding: 0;
     font-size: 2.25rem;
     float: none;
   }
