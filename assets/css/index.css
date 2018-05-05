@@ -23,6 +23,18 @@ h1:hover .pronunciation {
   transition: .2s linear;
 }
 
+nav {
+  border: 5px solid #333;
+  padding: 15px;
+  margin: auto;
+  font-family: Kreon;
+  font-size: 1.45rem;
+}
+
+nav a {
+  display: inline;
+}
+
 h2 {
   font-family: Dosis;
   font-size: 2em;
@@ -108,15 +120,6 @@ footer:hover .fa-arrow-up {
     -ms-transform: translate(-80px, 15px); /* IE 9 */
     -webkit-transform: translate(-80px, 15px); /* Safari */
   
-}
-
-.nav {
-  margin: 0px 15px;
-  list-style: none;
-}
-
-.nav-button {
-  display: inline;
 }
 
 .profile-pic {
@@ -222,10 +225,10 @@ footer:hover .fa-arrow-up {
 /* ID 's, sorted alphabetically */
 /*==============================*/
 #about,
-#contact
-#nav-buttons,
+#contact,
+nav,
 #projects {
-  margin: 65px 0;
+  margin-bottom: 65px;
 }
 
 #about p {
@@ -244,14 +247,6 @@ footer:hover .fa-arrow-up {
 
 #github-plus-icon {
   transform: translateY(-85%);
-}
-
-#nav-buttons {
-  border: 5px solid #333;
-  padding: 15px;
-  margin: auto;
-  font-family: Kreon;
-  font-size: 1.45rem;
 }
 
 #projects {
@@ -274,12 +269,12 @@ footer:hover .fa-arrow-up {
     font-size: 4.5rem;
   }
 
-  .project {
-    height: 340px;
+  nav {
+    font-size: 1.35rem;
   }
 
-  #nav-buttons {
-    font-size: 1.35rem;
+  .project {
+    height: 340px;
   }
 }
 
@@ -314,6 +309,11 @@ footer:hover .fa-arrow-up {
     text-align: center;
   }
 
+  nav {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+
   footer {
     font-size: 1.5rem;
   }
@@ -341,11 +341,6 @@ footer:hover .fa-arrow-up {
     max-width: 140px;
     height: auto;
   }
-
-  #nav-buttons {
-    font-size: 1.05rem;
-    text-align: center;
-  }
 }
 
 /* For sizes bigger than medium/tablet, 
@@ -359,11 +354,11 @@ footer:hover .fa-arrow-up {
   }
 
   /* Underline animation for the nav links*/
-  #nav-buttons a {
+  nav a {
     display: inline-block;
   }
 
-  #nav-buttons a::after {
+  nav a::after {
     content: '';
     display: block;
     width: 0;
@@ -372,7 +367,7 @@ footer:hover .fa-arrow-up {
     transition: width .3s;
   }
 
-  #nav-buttons a:hover::after {
+  nav a:hover::after {
     width: 100%;
     /*transition: width .3s;*/
   }
