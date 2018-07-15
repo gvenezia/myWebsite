@@ -128,6 +128,7 @@ footer:hover .fa-arrow-up {
   border-radius: 50%;
   padding: 15px;
   width: 30%;
+  max-width: 350px;
 }
 
 /*nth child in order to get rid of redundant margin on all project containers */
