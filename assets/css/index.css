@@ -117,18 +117,25 @@ footer:hover .fa-arrow-up {
   float: right;
   width: 0;
   height: 0;
-  transform: translate(-80px, 15px);
+  /* Transform */
     -ms-transform: translate(-80px, 15px); /* IE 9 */
     -webkit-transform: translate(-80px, 15px); /* Safari */
+    transform: translate(-80px, 15px);
+    
   
 }
 
 .profile-pic {
   float: right;
-  border-radius: 50%;
+  position: relative;
+  /* Border Radius */
+    -webkit-border-radius: 50%; /* Safari */
+    -moz-border-radius: 50%;
+    border-radius: 50%;
   padding: 15px;
   width: 30%;
   max-width: 350px;
+  overflow: hidden;
 }
 
 /*nth child in order to get rid of redundant margin on all project containers */
